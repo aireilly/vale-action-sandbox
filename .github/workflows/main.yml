@@ -12,7 +12,7 @@ jobs:
       uses: errata-ai/vale-action@v1.4.0
       with:
         # Optional
-        config: https://raw.githubusercontent.com/aireilly/vale-action-sandbox/main/vale.ini
+        config: https://raw.githubusercontent.com/aireilly/vale-action-sandbox/vale-test/vale.ini
         # Optional
         files: __onlyModified
         onlyAnnotateModifiedLines: true
