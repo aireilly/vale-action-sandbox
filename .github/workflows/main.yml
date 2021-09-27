@@ -15,7 +15,7 @@ jobs:
         config: https://raw.githubusercontent.com/aireilly/vale-action-sandbox/main/vale.ini
         # Optional
         files: __onlyModified
-        onlyAnnotateModifiedLines: true
+        #onlyAnnotateModifiedLines: true
       env:
         # Required
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
