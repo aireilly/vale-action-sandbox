@@ -13,9 +13,9 @@ jobs:
       with:
 
         # Optional
-        config: https://raw.githubusercontent.com/aireilly/vale-action-sandbox/main/vale.ini
+        config: ${{ github.repository }}/vale.ini
         # Optional
-        files: vale-action-sandbox/modules
+        files: ${{ github.repository }}/modules
       env:
         # Required
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
