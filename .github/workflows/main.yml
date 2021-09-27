@@ -15,7 +15,7 @@ jobs:
         # Optional
         config: https://raw.githubusercontent.com/aireilly/vale-action-sandbox/main/vale.ini
         # Optional
-        files: aireilly/vale-action-sandbox/modules
+        files: aireilly/vale-action-sandbox/modules/
       env:
         # Required
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
