@@ -11,11 +11,11 @@ jobs:
     - name: Vale
       uses: errata-ai/vale-action@v1.4.0
       with:
-
         # Optional
         config: https://raw.githubusercontent.com/aireilly/vale-action-sandbox/main/vale.ini
         # Optional
         files: __onlyModified
+      onlyAnnotateModifiedLines: true
       env:
         # Required
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
