@@ -13,10 +13,10 @@ jobs:
       with:
 
         # Optional
-        config: /.vale.ini
+        config: .vale.ini
 
         # Optional
-        files: ./vale-action-sandbox/modules
+        files: vale-action-sandbox/modules
       env:
         # Required
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
