@@ -13,7 +13,7 @@ jobs:
       with:
 
         # Optional
-        config: .vale.ini
+        config: https://raw.githubusercontent.com/aireilly/vale-action-sandbox/main/vale.ini?token=ARU52DAP3MCLH6RNA7QLJULBKHRLM
 
         # Optional
         files: vale-action-sandbox/modules
