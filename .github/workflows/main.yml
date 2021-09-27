@@ -13,7 +13,7 @@ jobs:
       with:
 
         # Optional
-        config: ./.vale.ini
+        config: .vale.ini
 
         # Optional
         files: ./vale-action-sandbox/modules
