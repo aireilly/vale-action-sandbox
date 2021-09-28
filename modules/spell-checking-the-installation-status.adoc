@@ -33,3 +33,6 @@ Here are some words and phrases that should trigger the Vale linter:
 . Devops
 . fedora project
 . sub-menu
+. fore-ground
+
+Here's another sentence that will trigger an error: Use a cold backup so that you don't lose data.
