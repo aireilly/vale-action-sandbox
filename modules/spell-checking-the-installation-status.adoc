@@ -26,4 +26,4 @@ $ oc get agentclusterinstall -n $CLUSTER $CLUSTER -o jsonpath='{.status.conditio
 $ curl -sk $(oc get agentclusterinstall -n $CLUSTER $CLUSTER -o jsonpath='{.status.debugInfo.eventsURL}') | jq '.[-2,-1]'
 ----
 
-. Use the {rh-rhacm-first} (ACM) dashboard to monitor the progress of policy reconciliation.
+. Use the ACM dashboard to monitor the progress of policy reconciliation.
