@@ -27,3 +27,9 @@ $ curl -sk $(oc get agentclusterinstall -n $CLUSTER $CLUSTER -o jsonpath='{.stat
 ----
 
 . Use the ACM dashboard to monitor the progress of policy reconciliation.
+
+Here are some words and phrases that should trigger the Vale linter:
+
+. Devops
+. fedora project
+. sub-menu
