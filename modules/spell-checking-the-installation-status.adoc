@@ -35,3 +35,5 @@ Here are some words and phrases that should trigger the Vale linter:
 . Devops
 . fedora project
 . sub-menu
+
+Here's a bad word: Backside.
