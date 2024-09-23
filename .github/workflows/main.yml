@@ -1,22 +1,12 @@
 name: Linting
-on: [push]
+on: [pull_request]
 
 jobs:
-  prose:
+  vale:
+    name: runner / vale
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
-      uses: actions/checkout@master
-
-    - name: Vale
-      uses: errata-ai/vale-action@v1.4.0
-      with:
-        # Optional
-        config: https://raw.githubusercontent.com/aireilly/vale-action-sandbox/main/vale.ini
-        # Optional
-        files: __onlyModified
-        onlyAnnotateModifiedLines: true
-      env:
-        # Required
-        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-
+      - uses: actions/checkout@v3
+      - uses: errata-ai/vale-action@reviewdog
+        with:
+          token: ${{secrets.VALE_GITHUB_TOKEN}}
