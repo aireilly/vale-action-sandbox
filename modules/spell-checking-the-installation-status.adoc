@@ -5,6 +5,8 @@
 [id="ztp-checking-the-installation-status_{context}"]
 = Checking the installation status
 
+Adding another word that is just a suggestion level error: "ArgoCD".
+
 Adding a word that is just a suggestion level error: "monitor".
 
 Adding a bad word: Backside.
