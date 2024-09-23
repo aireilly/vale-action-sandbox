@@ -2,14 +2,26 @@ name: Linting
 on: [pull_request]
 
 jobs:
-  vale:
-    name: runner / vale
+  vale-suggestions:
+    name: runner / vale / suggestions
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: errata-ai/vale-action@reviewdog
+        with:
+          fail_on_error: false
+          reporter: github-check
+          filter_mode: added
+          token: ${{secrets.GITHUB_TOKEN}}
+  vale-errors:
+    name: runner / vale / errors
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: errata-ai/vale-action@reviewdog
         with:
           fail_on_error: true
+          vale_flags: "--minAlertLevel=error"
           reporter: github-check
           filter_mode: added
           token: ${{secrets.GITHUB_TOKEN}}
