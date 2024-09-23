@@ -5,6 +5,8 @@
 [id="ztp-checking-the-installation-status_{context}"]
 = Checking the installation status
 
+Adding a bad word: Backside.
+
 The ArgoCD pipeline detects the `SiteConfig` and `PolicyGenTemplate` custom resources (CRs) in the Git repository and syncs them to the hub cluster. In the process, it generates installation and policy CRs and applies them to the hub cluster. You can monitor the progress of this synchronization in the ArgoCD dashboard.
 
 .Procedure

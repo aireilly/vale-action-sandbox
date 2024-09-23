@@ -6,7 +6,10 @@ jobs:
     name: runner / vale
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: errata-ai/vale-action@reviewdog
         with:
-          token: ${{secrets.VALE_GITHUB_TOKEN}}
+          fail_on_error: true
+          reporter: github-check
+          filter_mode: added
+          token: ${{secrets.GITHUB_TOKEN}}
