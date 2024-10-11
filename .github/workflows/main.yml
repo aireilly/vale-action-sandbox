@@ -4,7 +4,7 @@ on: [pull_request]
 jobs:
   vale-suggestions:
     name: runner / vale / suggestions
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
       - uses: errata-ai/vale-action@reviewdog
@@ -15,7 +15,7 @@ jobs:
           token: ${{secrets.GITHUB_TOKEN}}
   vale-errors:
     name: runner / vale / errors
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
       - uses: errata-ai/vale-action@reviewdog
